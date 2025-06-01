@@ -2,3 +2,27 @@ go言語学習用のリポジトリです。
 日々の学びをコミットしていきます。
 
 masterブランチへの直接コミット禁止
+
+## ✅ 動作環境
+
+- Docker
+- Git（任意）
+
+## 🚀 セットアップ手順
+
+### 1. リポジトリをクローン
+
+```bash
+git clone https://github.com/Pterapogon/lean-docker-go.git
+cd lean-docker-go
+
+
+# Dockerイメージのビルド
+docker build -t learn-docker-go .
+
+# コンテナ起動(停止はCtrl + C)
+docker run --rm -p 8080:8080 learn-docker-go
+
+# ブラウザで動作確認 表示されていればいったんは成功
+http://localhost:8080
+
