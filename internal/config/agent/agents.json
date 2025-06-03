@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "language": {
+    "preferred": "japanese",
+    "fallback": "english"
+  },
+  "naming_conventions": {
+    "function": {
+      "style": "camelCase",
+      "examples": ["calculateTotal", "getUserProfile"],
+      "description": "関数名はキャメルケースで記述してください（例: getUserProfile）"
+    },
+    "variable": {
+      "style": "camelCase",
+      "examples": ["userCount", "isValid"],
+      "description": "変数名はキャメルケースで記述してください（例: userCount）"
+    },
+    "constant": {
+      "style": "UPPER_SNAKE_CASE",
+      "examples": ["MAX_RETRY_COUNT", "DEFAULT_TIMEOUT"],
+      "description": "定数は大文字のスネークケースで記述してください（例: MAX_RETRY_COUNT）"
+    },
+    "struct": {
+      "style": "camelCase",
+      "examples": ["UserProfile", "ConfigManager"],
+      "description": "構造体名はキャメルケースで記述してください（例: UserProfile）"
+    }
+  },
+  "code_style": {
+    "indent": "tab",
+    "description": "インデントはタブを使用してください"
+  },
+  "comment_rules": {
+    "preserve_existing_comments": true,
+    "description": "既存のコメントは指示がない限り保持してください"
+  }
+} 
